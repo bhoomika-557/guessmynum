@@ -1,8 +1,9 @@
-.color{
+.color {
     color: rgb(244, 232, 232);
     background-color: rgb(24, 23, 23);
 }
-.topflex{
+
+.topflex {
     display: flex;
     flex-direction: row;
     align-content: space-between;
@@ -12,60 +13,163 @@
     padding-top: 2%;
     padding-bottom: 6px;
 }
-.again{
+
+.again {
     font-size: 30px;
     width: 218px;
     height: 76px;
 }
-.guessmynumber{
+
+.guessmynumber {
     text-align: center;
     font-size: 50px;
 }
-.secretsection{
+
+/* .horizontalline{
+    position: absolute;
+    /* top:120px;
+    height: 10px; 
+    background-color: rgb(244, 232, 232);
+    border: none;
+}  */
+
+.secretsection {
+    display: flex;
+    justify-content: center;
+}
+
+.secretnum {
+    padding-top:30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width:100px; */
+    width: 160px;
+    font-size: 66px;
+    background-color: rgb(244, 232, 232);
+    color: rgb(24, 23, 23);
+
+}
+
+/* .secretsection{
     text-align: center;
 }
 .secretnum{
-    background-color: rgb(244, 232, 232);
-    color: rgb(24, 23, 23);
-    margin-left:45%;
-    padding-top:30px;
-    padding-bottom:30px;
-    width:160px;
-    font-size: 66px;
-}
-.bottomflex{
+     */
+
+
+
+/* position: relative;
+    top:120px;
+    height: 10px; */
+
+.bottomflex {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-evenly;
+    height:212px;
 }
-.flexone{
+
+.flexone {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.enternum{
+
+.enternum {
     border-style: solid;
     border-color: rgb(236, 243, 237);
-    background-color: black; 
+    background-color: black;
     margin-bottom: 68px;
     height: 123px;
-    text-align: center  ;
+    text-align: center;
     color: aliceblue;
     font-size: 45px;
-    width:224px;
+    width: 224px;
 
 }
-.checkbutton{
+
+.checkbutton {
     height: 76px;
     width: 84%;
     font-size: 30px;
     border-radius: 42px;
 
 }
-.right{
+
+.right {
     align-items: baseline;
 }
-.between{
+
+.between {
     font-size: 29px;
 }
 
+/******************************************************* */
+@media screen and (max-width:480px) {
+    .again {
+        font-size: 20px;
+        width: 105px;
+        height: 42px;
+    }
+
+    .between {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .guessmynumber {
+
+        font-size: 30px;
+    }
+
+    .secretnum {
+        /* margin: unset;
+   padding: unset;
+   display: flex;
+   justify-content: center;
+   align-items: center; */
+        width: 100px;
+        font-size: 45px;
+        height: 35px;
+    }
+
+    .topflex {
+        height: 50px;
+    }
+
+    .enternum {
+        margin-bottom: 68px;
+        /* height: 90px;
+        font-size: 30px;
+        width:150px; */
+        height: 70px;
+        font-size: 30px;
+        width: 125px;
+    }
+
+    .checkbutton {
+        height: 47px;
+        width: 110px;
+        font-size: 20px;
+        border-radius: 30px;
+    }
+
+    .phnmedia {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; */
+
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 36px;
+
+    }
+
+   
